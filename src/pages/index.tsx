@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import MainSlider from "@/components/MainSlider/MainSlider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -10,5 +11,9 @@ const poppins = Poppins({
 });
 
 export default function Home() {
-  return <></>;
+  return (
+    <div className="max-w-screen-2xl mx-auto">
+      <MainSlider />
+    </div>
+  );
 }
