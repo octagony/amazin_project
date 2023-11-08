@@ -25,7 +25,7 @@ const config: Config = {
       },
       colors: {
         primaryBlue: "#131921",
-        primaryLight: "#232f3e",
+        primaryDarker: "#232f3e",
         primaryYellow: "#febd69",
         textLight: "#ccc",
       },
