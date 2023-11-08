@@ -18,7 +18,7 @@ export default function MainSlider() {
         interval={3000}
       >
         <div>
-          <Image src={blackFriday} alt="blackFriday" />
+          <Image priority src={blackFriday} alt="blackFriday" />
         </div>
         <div>
           <Image src={kitchenFavorites} alt="kitchenFavorites" />
