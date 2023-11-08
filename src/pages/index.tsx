@@ -4,10 +4,10 @@ import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import MainSlider from "@/components/MainSlider/MainSlider";
-import Product from "@/components/Product/Product";
 import axios from "axios";
 import { IProduct } from "@/types/product.interface";
 import { IIndexProps } from "@/types/index.interface";
+import ProductsList from "@/components/ProductsList/ProductsList";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,7 +18,9 @@ export default function Home({ productData }: IIndexProps) {
   return (
     <div className="mx-auto">
       <MainSlider />
-      <Product />
+      <div className="relative md:-mt-20 lgl:-mt-32 xl:-mt-60 z-20 mb-10">
+        <ProductsList products={productData} />
+      </div>
     </div>
   );
 }
